@@ -25,8 +25,12 @@ function sendMutation(mutation) {
     xhr.open("POST", "http://192.168.1.103:5007/send_mutation", true)
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8")
     xhr.addEventListener("load", () => {
-        if (xhr.status === 200)
-            console.log(JSON.parse(xhr.responseText));
+		if (xhr.status === 200){
+			if (JSON.parse(xhr.responseText)["mutation"] === "dangers") {
+				for (const attack of JSON.parse(xhr.responseText)["attack"])
+					console.log(attack)
+			}
+		}
         else
             console.log(JSON.parse(xhr.responseText));
     })

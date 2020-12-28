@@ -52,7 +52,10 @@ function requestAnalyzer(requestDetails) {
     request["parentFrame"] = requestDetails.parentFrameId !== -1;
 
     return sendRequest(request).then((response) => {
-        console.log(response);
+        if (response["mutation"] === "dangers") {
+            for (const attack of response["attack"])
+                console.log(attack)
+        }
         return {cancel: false};
     }).catch((response) => {
         console.log(response);
