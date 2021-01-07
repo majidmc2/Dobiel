@@ -13,10 +13,11 @@
 ```                       
 
 ## About
-**Dobile** is a Man-in-the-Browser Attack detection tool. it works with three main modules:
+**Dobile** is a Man-in-the-Browser Attack detection tool. it works with two main modules:
 1. Request Monitoring: This module finds all attack patterns on web requests
 2. Mutation Monitoring: This module finds all attack patterns on HTML mutations.
-This tool install on Firefox web browser and detecte MitB attacks.
+
+This tool install on Firefox web browser and detectes MitB attacks.
 
 ----
 ## Installation
