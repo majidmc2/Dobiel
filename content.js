@@ -22,7 +22,7 @@ function parsStyleObject(obj) {
 
 function sendMutation(mutation) {
     const xhr = new XMLHttpRequest;
-    xhr.open("POST", "http://192.168.1.103:5007/send_mutation", true)
+    xhr.open("POST", "[IP]:[PORT]/send_mutation", true)
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8")
     xhr.addEventListener("load", () => {
 		if (xhr.status === 200){

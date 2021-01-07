@@ -2,7 +2,7 @@ function sendRequest(body) {
     return new Promise(function (resolve, reject) {
         const xhr = new XMLHttpRequest;
         // TODO: Set // async: false and use proxy instead of XMLHTTPRequest
-        xhr.open("POST", "http://192.168.1.103:5007/send_request", true);
+        xhr.open("POST", "[IP]:[PORT]/send_request", true);
         xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         xhr.addEventListener("load", () => {
             if (xhr.status === 200)
@@ -17,7 +17,7 @@ function sendRequest(body) {
 // ------------------------- Request Analyzer -------------------------
 
 function requestAnalyzer(requestDetails) {
-    let serverIP = ["http://192.168.1.103:5007/send_mutation", "http://192.168.1.103:5007/send_request"]
+    let serverIP = ["[IP]:[PORT]"]
     if (serverIP.includes(requestDetails.url))
         return {cancel: false};
 
