@@ -31,4 +31,4 @@ Then you should change IP and Port of **Dobile-Server** in code (Change [IP] and
 
 After that load **manifest.json**  to "about:debugging#/runtime/this-firefox" with "Load Temporary Add-on…" butten.
 
-After that you should run **Dobile-Server** ([see](https://github.com/majidmc2/Dobiel-Server "Link")). In the server collected all attack patterns and find any attacks.
+After that you should run **Dobile-Server** ([see](https://github.com/majidmc2/Dobiel-Server "Link")). All attack patterns are collected In the server and finds any attacks.
