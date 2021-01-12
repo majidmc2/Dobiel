@@ -28,7 +28,7 @@ Therefore, browser extensions that make it easier for users to browse the web fo
 
 ## The summary of research ideas and proposed solutions:
 For this purpose, by describing the pattern of attacks in the tool, these attacks are detected. The pattern of attacks is described by a marking structure and the characteristics of an attack that are expressed in a structure.
-After loading the proposed tool, the tool analyzes and the parameters of the attack pattern on the web page and, if it meets the conditions of the attack, notifies the user. The advantage of the proposed method over other previous methods is that the proposed tool is not limited to identifying one or more specific attacks and the code of the detection method is not harded in the tool and by introducing a new attack, by describing its pattern, the tool is able to immediately detect that attack.
+After loading the proposed tool, the tool analyzes the parameters of the attack pattern on the web page and if it equals with conditions of the attack, notifies the user. The advantage of the proposed method over other previous methods is that the proposed tool is not limited to identifying one or more specific attacks and the code of the detection method is not harded in the tool and by introducing a new attack, by describing its pattern, the tool is able to immediately detect that attack.
 
 
 ## Achievements:
